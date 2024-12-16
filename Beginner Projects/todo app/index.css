@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #590c6a;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+}
+
+.todo-app {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.input-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.input-button input {
+  padding: 10px;
+  border-radius: 2px;
+  border: 1px solid gray;
+  margin-right: 10px;
+  width: 80%;
+  border: 2px solid rgb(229, 229, 229);
+}
+
+.input-button input:focus {
+  outline: none;
+  border: 2px solid #590c6a;
+}
+
+.input-button button {
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+  background-color: #590c6a;
+  color: white;
+  cursor: pointer;
+  width: 20%;
+}
+
+.todo-list {
+  width: 100%;
+}
+
+.list-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-top: 1px solid gray;
+  cursor: pointer;
+}
+
+.list-box input {
+  background-color: #590c6a;
+  color: #590c6a;
+}
+
+.list-box .buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.todo-list ul {
+  list-style: none;
+}
+
+.checked {
+  text-decoration: line-through;
+}
