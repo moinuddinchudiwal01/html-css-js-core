@@ -7,42 +7,58 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="container">
-        <div class="todo-app">
-            <div class="input-button">
-                <input type="text" placeholder="Create your task here ">
-                <button type="button">Add</button>
+    <main class="todo-container">
+        <section class="todo-app">
+            <!-- Input Section -->
+            <div class="todo-input">
+                <input type="text" class="todo-input__field" placeholder="Create your task here">
+                <button type="button" class="todo-input__button">Add</button>
             </div>
-            <div class="todo-list">
-                <ul>
-                    <div class="list-box">
-                        <input type="radio">
-                        <li class="checked">Todo 1</li>
-                        <div class="buttons">
-                            <button>Delete</button>
-                            <button>Edit</button>
+
+            <!-- Todo List Section -->
+             <div class="todo-list">
+                <ul class="todo-list__items">
+                    <!-- Individual Task -->
+                     <li class="todo-item">
+                        <input type="radio" class="todo-item__checkbox">
+                        <span class="todo-item__text todo-item__text--completed">Todo 1</span>
+                        <div class="todo-item__actions">
+                            <button class="todo-item__button todo-item__button--delete">
+                                <img src="icons/delete.svg" alt="Delete Task">
+                            </button>
+                            <button class="todo-item__button todo-item__button--edit">
+                                <img src="icons/edit.svg" alt="Edit Task">
+                            </button>
                         </div>
-                    </div>
-                    <div class="list-box">
-                        <input type="radio">
-                        <li>Todo 1</li>
-                        <div class="buttons">
-                            <button>Delete</button>
-                            <button>Edit</button>
+                     </li>
+                     <li class="todo-item">
+                        <input type="radio" class="todo-item__checkbox">
+                        <span class="todo-item__text">Todo 1</span>
+                        <div class="todo-item__actions">
+                            <button class="todo-item__button todo-item__button--delete">
+                                <img src="icons/delete.svg" alt="Delete Task">
+                            </button>
+                            <button class="todo-item__button todo-item__button--edit">
+                                <img src="icons/edit.svg" alt="Edit Task">
+                            </button>
                         </div>
-                    </div>
-                    <div class="list-box">
-                        <input type="radio">
-                        <li>Todo 1</li>
-                        <div class="buttons">
-                            <button>Delete</button>
-                            <button>Edit</button>
+                     </li>
+                     <li class="todo-item">
+                        <input type="radio" class="todo-item__checkbox">
+                        <span class="todo-item__text">Todo 1</span>
+                        <div class="todo-item__actions">
+                            <button class="todo-item__button todo-item__button--delete">
+                                <img src="icons/delete.svg" alt="Delete Task">
+                            </button>
+                            <button class="todo-item__button todo-item__button--edit">
+                                <img src="icons/edit.svg" alt="Edit Task">
+                            </button>
                         </div>
-                    </div>
+                     </li>
                 </ul>
-            </div>
-        </div>
-    </div>
+             </div>
+        </section>
+    </main>
     <script src="index.js"></script>
 </body>
 </html>
