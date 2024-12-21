@@ -12,14 +12,15 @@
             <!-- Input Section -->
             <div class="todo-input">
                 <input type="text" id="todoInput" class="todo-input__field" placeholder="Create your task here">
-                <button type="button" class="todo-input__button" onclick="handleCreateTodo()">Add</button>
+                <input type="hidden" id="todoEditId">
+                <button type="button" id="todoButton" class="todo-input__button" onclick="handleCreateTodo()">Add</button>
             </div>
 
             <!-- Todo List Section -->
              <div class="todo-list">
-                <ul class="todo-list__items">
+                <ul class="todo-list__items" id="todo-list__items">
                     <!-- Individual Task -->
-                     <li class="todo-item">
+                     <!-- <li class="todo-item">
                         <input type="radio" class="todo-item__checkbox">
                         <span class="todo-item__text todo-item__text--completed">Todo 1</span>
                         <div class="todo-item__actions">
@@ -54,7 +55,7 @@
                                 <img src="icons/edit.svg" alt="Edit Task">
                             </button>
                         </div>
-                     </li>
+                     </li> -->
                 </ul>
              </div>
         </section>
